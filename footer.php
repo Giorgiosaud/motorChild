@@ -4,11 +4,15 @@ global $motor_options;
 
 
 </div><!-- #content -->
-
+<?php $footer_image=get_stylesheet_directory_uri().'/img/footer.jpg';
+	if(get_theme_mod('footer_image')){
+		$footer_image=get_theme_mod('footer_image')	;
+	}
+ ?>
 
 <!-- Footer - start -->
 <footer class="footer">
-	<div class="cont footer-top" style="bakcground-image:url(<?= get_theme_mod('footer_bg')?>)">
+	<div class="cont footer-top" style="bakcground-image:url(<?= $footer_image ?>)">
 
 		<!-- Footer Menu -->
 		<div class="footer-menu">
@@ -35,7 +39,7 @@ global $motor_options;
 			<p class="footer-msg"><?php echo esc_html__('Our online support is available', 'motor') . ' <a class="callback" href="#">' . esc_html__( 'Send us a message', 'motor' ) . '</a>'; ?></p>
 			<?php endif; ?>
 
-			<!-- <div class="footer-social"> 
+			<!-- <div class="footer-social">
 				<?php for ($i = 1; $i <= 10; $i++) : ?>
 					<?php if (!empty($motor_options['motor_footer_link_'.$i]) && !empty($motor_options['motor_footer_icon_'.$i])) : ?>
 					<div class="footer-social-item">
