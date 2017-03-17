@@ -45,7 +45,7 @@ global $motor_options;
 					</div>&nbsp;
 					<?php endif; ?>
 				<?php endfor; ?>
-			</div -->>
+			</div -->
 			<?php if (!empty($motor_options['motor_footer_form_1'])) : ?>
 			<div class="footer-info-form">
 			<?php echo do_shortcode($motor_options['motor_footer_form_1']); ?>
