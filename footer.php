@@ -11,8 +11,8 @@ global $motor_options;
  ?>
 
 <!-- Footer - start -->
-<footer class="footer">
-	<div class="cont footer-top" style="bakcground-image:url(<?= $footer_image ?>)">
+<footer class="footer" style="background-image:url(<?= $footer_image ?>)">
+	<div class="cont footer-top" >
 
 		<!-- Footer Menu -->
 		<div class="footer-menu">
