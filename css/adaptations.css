@@ -1,6 +1,6 @@
 .header .header-logo{
-		display:none;
-	}
+	display:none;
+}
 @media only screen and (max-width: 650px){
 	.header .header-logo-top {
 		display: none;
