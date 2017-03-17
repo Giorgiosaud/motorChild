@@ -35,7 +35,9 @@ body_class($sticky_header);
 	<!-- Logotype -->
 	<?php if ($motor_options['motor_header_logo']) : ?>
 	<p class="header-logo">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_attr($motor_options['motor_header_logo']); ?>" alt="<?php bloginfo('sitename'); ?>"></a>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_attr($motor_options['motor_header_logo']); ?>" alt="<?php bloginfo('sitename'); ?>">
+		<span class="clearfix"></span>
+		</a>
 	</p>
 	<?php endif; ?>
 	<div class="header-info">
