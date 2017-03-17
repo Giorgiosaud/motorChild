@@ -11,6 +11,10 @@
 }
 .footer_image{
 		background-size: cover;
+		background-position: 100%;
+}
+.footer-info .footer-msg{
+	color:#FFF;
 }
 @media only screen and (max-width: 650px){
 	.header .header-logo-top {
