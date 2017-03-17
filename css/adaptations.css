@@ -16,6 +16,7 @@
 	}
 	.header .header-logo{
 		display:block;
+		height:60%;
 	}
 	.header .header-logo img{
 		height: 100%;
