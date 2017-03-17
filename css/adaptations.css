@@ -16,6 +16,15 @@
 .footer-info .footer-msg{
 	color:#FFF;
 }
+.woof_sku_search_container input[type='search'] {
+    width: 90% !important;
+    height: 2em !important;
+    line-height: 2em !important;
+    font-size: 3em !important;
+    padding: 1em !important;
+    margin: 0em 5% !important;
+    color: black;
+}
 @media only screen and (max-width: 650px){
 	.header .header-logo-top {
 		display: none;
