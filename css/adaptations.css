@@ -9,8 +9,8 @@
 .header .header-logo{
 	display:none;
 }
-footer.footer{
-		background-size: contain;
+.footer_image{
+		background-size: cover;
 }
 @media only screen and (max-width: 650px){
 	.header .header-logo-top {
