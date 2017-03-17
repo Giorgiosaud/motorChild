@@ -8,7 +8,7 @@ global $motor_options;
 
 <!-- Footer - start -->
 <footer class="footer">
-	<div class="cont footer-top">
+	<div class="cont footer-top" style="bakcground-image:url(<?= get_theme_mod('footer_bg')?>)">
 
 		<!-- Footer Menu -->
 		<div class="footer-menu">
