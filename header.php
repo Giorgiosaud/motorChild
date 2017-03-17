@@ -27,6 +27,11 @@ body_class($sticky_header);
 <div id="page" class="site">
 <!-- Header - start -->
 <div id="masthead" class="header">
+	<?php if ($motor_options['motor_header_logo']) : ?>
+	<p class="header-logo-top">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_attr($motor_options['motor_header_logo']); ?>" alt="<?php bloginfo('sitename'); ?>"></a>
+	</p>
+	<?php endif; ?>
 
 	<!-- Navmenu Mobile Toggle Button -->
 	<a href="#" class="header-menutoggle" id="header-menutoggle"><?php echo esc_html__('Menu', 'motor'); ?></a>
