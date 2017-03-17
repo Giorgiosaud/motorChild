@@ -35,7 +35,7 @@ global $motor_options;
 			<p class="footer-msg"><?php echo esc_html__('Our online support is available', 'motor') . ' <a class="callback" href="#">' . esc_html__( 'Send us a message', 'motor' ) . '</a>'; ?></p>
 			<?php endif; ?>
 
-			<div class="footer-social"> 
+			<!-- <div class="footer-social"> 
 				<?php for ($i = 1; $i <= 10; $i++) : ?>
 					<?php if (!empty($motor_options['motor_footer_link_'.$i]) && !empty($motor_options['motor_footer_icon_'.$i])) : ?>
 					<div class="footer-social-item">
@@ -45,7 +45,7 @@ global $motor_options;
 					</div>&nbsp;
 					<?php endif; ?>
 				<?php endfor; ?>
-			</div>
+			</div -->>
 			<?php if (!empty($motor_options['motor_footer_form_1'])) : ?>
 			<div class="footer-info-form">
 			<?php echo do_shortcode($motor_options['motor_footer_form_1']); ?>
