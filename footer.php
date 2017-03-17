@@ -11,7 +11,8 @@ global $motor_options;
  ?>
 
 <!-- Footer - start -->
-<footer class="footer" style="background-image:url(<?= $footer_image ?>)">
+<footer class="footer" >
+<div class="footer_image" style="background-image:url(<?= $footer_image ?>)">
 	<div class="cont footer-top" >
 
 		<!-- Footer Menu -->
@@ -58,6 +59,7 @@ global $motor_options;
 		</div>
 
 	</div>
+</div>
 	<?php if (!empty($motor_options['motor_header_topbar']) && $motor_options['motor_header_topbar']) : ?>
 <!-- TopBar - start -->
 <div class="topbar">
