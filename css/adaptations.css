@@ -16,7 +16,7 @@
 .footer-info .footer-msg{
 	color:#FFF;
 }
-.woof_sku_search_container input[type='search'] {
+.woof_text_search_container input[type='search'],.woof_sku_search_container input[type='search'] {
     width: 90% !important;
     height: 2em !important;
     line-height: 2em !important;
