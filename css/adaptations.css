@@ -1,10 +1,10 @@
 .header .header-logo-top{
 	height: 200px;
-    text-align: center;
+	text-align: center;
 }
 .header .header-logo-top a img{
 	height: 100%;
-    margin: auto;
+	margin: auto;
 }
 .header .header-logo{
 	display:none;
@@ -16,6 +16,10 @@
 	}
 	.header .header-logo{
 		display:block;
+		height: 100%;
+	}
+	.header {
+		padding: 0 0 100px;
 	}
 
 }
