@@ -5,6 +5,9 @@
 	margin: auto;
 	left: 0;
 }
+.header .header-logo a{
+	max-height:200px;
+}
 .header .header-logo img {
     display: block;
     height: 100%;
