@@ -32,7 +32,12 @@ body_class($sticky_header);
 
 	<!-- Navmenu Mobile Toggle Button -->
 	<a href="#" class="header-menutoggle" id="header-menutoggle"><?php echo esc_html__('Menu', 'motor'); ?></a>
-
+	<!-- Logotype -->
+	<?php if ($motor_options['motor_header_logo']) : ?>
+	<p class="header-logo">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_attr($motor_options['motor_header_logo']); ?>" alt="<?php bloginfo('sitename'); ?>"></a>
+	</p>
+	<?php endif; ?>
 	<div class="header-info">
 
 		<?php if ( class_exists( 'WooCommerce' ) ) : ?>
@@ -104,12 +109,7 @@ body_class($sticky_header);
 
 	</div>
 
-	<!-- Logotype -->
-	<?php if ($motor_options['motor_header_logo']) : ?>
-	<p class="header-logo">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_attr($motor_options['motor_header_logo']); ?>" alt="<?php bloginfo('sitename'); ?>"></a>
-	</p>
-	<?php endif; ?>
+	
 
 	<!-- Navmenu - start -->
 	<?php
