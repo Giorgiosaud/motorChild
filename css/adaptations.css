@@ -25,6 +25,10 @@
     margin: 0em 5% !important;
     color: black;
 }
+.motor_product_categories .motor_product_categories_list .motor_product_categories_item a:hover .frontcategs-img{
+opacity:1;
+filter:sepia(100%);
+}
 @media only screen and (max-width: 650px){
 	.header .header-logo-top {
 		display: none;
