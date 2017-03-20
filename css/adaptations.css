@@ -1,5 +1,5 @@
 // Hide Compare Button
-p.prod-compare,p.prod-li-compare {
+.prod .prod-compare, p.prod-compare, p.prod-li-compare {
     display: none !important;
 }
 .header .header-logo-top{
