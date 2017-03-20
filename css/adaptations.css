@@ -1,3 +1,7 @@
+// Hide Compare Button
+p.prod-li-compare {
+    display: none !important;
+}
 .header .header-logo-top{
 	height: 200px;
 	text-align: center;
