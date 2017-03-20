@@ -42,6 +42,9 @@ p.prod-li-compare {
 	opacity:1;
 	filter:sepia(100%);
 }
+.motor_product_categories .motor_product_categories_list .motor_product_categories_item .frontcategs-img{
+	height: 100px;
+}
 @media only screen and (max-width: 650px){
 	.header .header-logo-top {
 		display: none;
