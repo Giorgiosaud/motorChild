@@ -2,6 +2,9 @@
 .prod .prod-compare, p.prod-compare, p.prod-li-compare {
     display: none !important;
 }
+.overfhidden{
+	overflow: hidden;
+}
 .header .header-logo-top{
 	height: 200px;
 	text-align: center;
