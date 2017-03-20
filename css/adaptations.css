@@ -1,6 +1,12 @@
 // Hide Compare Button
-.prod .prod-compare, p.prod-compare, p.prod-li-compare {
-    display: none !important;
+.prod .prod-compare{
+	display: none !important;
+}
+p.prod-compare{
+	display: none !important;
+}
+p.prod-li-compare {
+	display: none !important;
 }
 .overfhidden{
 	overflow: hidden;
@@ -17,24 +23,24 @@
 	display:none;
 }
 .footer_image{
-		background-size: cover;
-		background-position: 100%;
+	background-size: cover;
+	background-position: 100%;
 }
 .footer-info .footer-msg{
 	color:#FFF;
 }
 .woof_text_search_container input[type='search'],.woof_sku_search_container input[type='search'] {
-    width: 90% !important;
-    height: 2em !important;
-    line-height: 2em !important;
-    font-size: 3em !important;
-    padding: 1em !important;
-    margin: 0em 5% !important;
-    color: black;
+	width: 90% !important;
+	height: 2em !important;
+	line-height: 2em !important;
+	font-size: 3em !important;
+	padding: 1em !important;
+	margin: 0em 5% !important;
+	color: black;
 }
 .motor_product_categories .motor_product_categories_list .motor_product_categories_item a:hover .frontcategs-img{
-opacity:1;
-filter:sepia(100%);
+	opacity:1;
+	filter:sepia(100%);
 }
 @media only screen and (max-width: 650px){
 	.header .header-logo-top {
@@ -47,7 +53,7 @@ filter:sepia(100%);
 	}
 	.header-menutoggle{
 		top: 70px;
-	    height: 50px;
+		height: 50px;
 	}
 	.header .header-logo img{
 		height: 100%;
