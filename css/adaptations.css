@@ -44,8 +44,8 @@
 }
 .header.header-search input[type=text] {
 	color: #868ca7;
-	margin: 0 0 0 27%;
-	width: 60%;
+	margin: 0;
+	width: 95%;
 	font-size: 15px;
 	background: transparent;
 	height: 50px;
