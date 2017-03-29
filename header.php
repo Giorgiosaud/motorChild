@@ -55,10 +55,12 @@ body_class($sticky_header);
 					<?php get_search_form(); ?>
 				</div>
 				<div class="carrito">
-					<p class="header-cart-count">
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/cart.png" alt="">
-						<span><?php echo WC()->cart->get_cart_contents_count()?></span>
-					</p>
+					<a href="<?php echo esc_url(WC()->cart->get_cart_url()); ?>" class="header-cart">
+						<p class="header-cart-count">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/cart.png" alt="">
+							<span><?php echo WC()->cart->get_cart_contents_count()?></span>
+						</p>
+					</a>
 				</div>
 			</div>
 			<div class="menuPrincipalEIconos">
