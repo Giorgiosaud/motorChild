@@ -68,7 +68,7 @@
 	border-left: 1px solid #1f293b;
 }
 .buscador {
-	width: 50%;
+	flex:1
 }
 // Hide Compare Button
 // 
