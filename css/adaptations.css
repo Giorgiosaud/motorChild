@@ -42,7 +42,7 @@
 	vertical-align: middle;
 	transition: all 0.2s;
 }
-.header.header-search input[type=text] {
+.header .header-search input[type=text]{
 	color: #868ca7;
 	margin: 0;
 	width: 95%;
