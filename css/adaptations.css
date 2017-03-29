@@ -5,6 +5,7 @@
 .logo {
     width: 25%;
     height: 200px;
+    text-align: center;
 }
 .logo a {
     height: 100%;
