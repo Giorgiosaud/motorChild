@@ -59,7 +59,6 @@ body_class($sticky_header);
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/cart.png" alt="">
 							<span><?php echo WC()->cart->get_cart_contents_count()?></span>
 						</p>
-						<p class="header-cart-summ"><?php echo WC()->cart->get_cart_total(); ?></p>
 					</div>
 				</a>
 			</div>
