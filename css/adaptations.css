@@ -1,4 +1,18 @@
+.header-flexible {
+    display: flex;
+}
+.menues {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.top-logo {
+    width: 20%;
+}
+
+
 // Hide Compare Button
+// 
 .prod .prod-compare{
 	display: none !important;
 }
@@ -33,20 +47,4 @@ p.prod-li-compare {
 }
 .motor_product_categories .motor_product_categories_list .motor_product_categories_item .frontcategs-img{
 	height: 100px;
-}
-/*New Top*/
-
-
-.header-flexible {
-    display: flex;
-}
-
-.menues {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-}
-
-.top-logo {
-    width: 20%;
 }
