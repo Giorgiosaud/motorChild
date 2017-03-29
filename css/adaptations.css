@@ -1,14 +1,4 @@
-.header-flexible {
-    display: flex;
-}
-.searchBarMenu {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-}
-.top-logo {
-    width: 20%;
-}
+
 
 
 // Hide Compare Button

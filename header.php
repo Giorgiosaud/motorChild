@@ -46,38 +46,6 @@ body_class($sticky_header);
 
 <div id="page" class="site">
 	<!-- Header - start -->
-	<div class="header header-flexible">
-		<div class="top-logo">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_attr($motor_options['motor_header_logo']); ?>" alt="<?php bloginfo('sitename'); ?>"></a>
-		</div>
-		<div class="searchBarMenu">
-			<div class="menu-top">
-				<!-- Search Form -->
-				<a href="#" class="header-searchbtn" id="header-searchbtn"></a>
-				<?php get_search_form(); ?>
-				<a href="<?php echo esc_url(WC()->cart->get_cart_url()); ?>" class="header-cart">
-					<div class="header-cart-inner">
-						<p class="header-cart-count">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/cart.png" alt="">
-							<span><?php echo WC()->cart->get_cart_contents_count()?></span>
-						</p>
-					</div>
-				</a>
-			</div>
-			<div class="menu-bottom">
-				<?php
-				wp_nav_menu( array(
-					'theme_location' => 'rw-top-menu',
-					'container' => 'nav',
-					'container_class' => '',
-					'container_id' => 'top-menu',
-					'items_wrap' => '<ul>%3$s</ul>',
-					) 
-				);
-				?>
-			</div>
-		</div>
-	</div>
 	<div id="masthead" class="header">
 
 		<!-- Navmenu Mobile Toggle Button -->
