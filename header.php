@@ -47,7 +47,7 @@ body_class($sticky_header);
 	<!-- Header - start -->
 	<div class="header flex-row">
 		<div class="logo">
-			Logo
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_attr($motor_options['motor_header_logo']); ?>" alt="<?php bloginfo('sitename'); ?>"></a>
 		</div>
 		<div class="flex-column">
 			<div class="menuBuscadorCarrito">
