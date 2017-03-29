@@ -51,9 +51,13 @@ body_class($sticky_header);
 		</div>
 		<div class="flex-column">
 			<div class="menuBuscadorCarrito">
-				<div class="buscador">buscador</div><div class="carrito">carrito</div>
+				<div class="buscador">buscador</div>
+				<div class="carrito">carrito</div>
 			</div>
-			<div class="menuPrincipal">Menu Principal</div><div class="iconos">Iconos</div>
+			<div class="menuPrincipalEIconos">
+				<div class="menuPrincipal">Menu Principal</div>
+				<div class="iconos">Iconos</div>
+			</div>
 		</div>
 	</div>
 
