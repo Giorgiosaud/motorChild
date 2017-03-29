@@ -51,7 +51,9 @@ body_class($sticky_header);
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_attr($motor_options['motor_header_logo']); ?>" alt="<?php bloginfo('sitename'); ?>"></a>
 		</div>
 		<div class="searchBarMenu">
-			<div class="menu-shop">
+			<div class="menu-top">
+				<!-- Search Form -->
+				<a href="#" class="header-searchbtn" id="header-searchbtn"></a>
 				<?php get_search_form(); ?>
 				<a href="<?php echo esc_url(WC()->cart->get_cart_url()); ?>" class="header-cart">
 					<div class="header-cart-inner">
@@ -62,7 +64,7 @@ body_class($sticky_header);
 					</div>
 				</a>
 			</div>
-			<div class="menu-top">
+			<div class="menu-bottom">
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'rw-top-menu',
