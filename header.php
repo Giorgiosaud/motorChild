@@ -43,9 +43,20 @@ body_class($sticky_header);
 </script>
 
 
-
 <div id="page" class="site">
 	<!-- Header - start -->
+	<div class="header flex-row">
+		<div class="logo">
+			Logo
+		</div>
+		<div class="flex-column">
+			<div class="menuBuscadorCarrito">
+				<div class="buscador">buscador</div><div class="carrito">carrito</div>
+			</div>
+			<div class="menuPrincipal">Menu Principal</div><div class="iconos">Iconos</div>
+		</div>
+	</div>
+
 	<div id="masthead" class="header">
 
 		<!-- Navmenu Mobile Toggle Button -->
