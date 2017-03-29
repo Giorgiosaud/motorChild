@@ -19,6 +19,7 @@
 .flex-column {
 	width: 75%;
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 }
 
