@@ -132,16 +132,20 @@ if(get_theme_mod('footer_image')){
 
 <?php wp_footer(); ?>
 <script>
-	FB.ui({
-		method: 'share_open_graph',
-		action_type: 'og.likes',
-		action_properties: JSON.stringify({
-			object:'https://developers.facebook.com/docs/',
-		})
-	}, function(response){
-  // Debug response (optional)
-  console.log(response);
-});
+			FB.ui(
+				  {
+					      method: 'share',
+						          href: 'https://developers.facebook.com/docs/',
+							    },
+							      // callback
+							    //   function(response) {
+							    //       if (response && !response.error_message) {
+							    //             alert('Posting completed.');
+							    //                 } else {
+							    //                       alert('Error while posting.');
+							    //                           }
+							    //                             }
+							    //                             );
 </script>
 </body>
 </html>
