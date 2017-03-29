@@ -35,7 +35,9 @@ p.prod-li-compare {
 	height: 100px;
 }
 /*New Top*/
-.header.header-flexible {
+
+
+.header-flexible {
     display: flex;
 }
 
