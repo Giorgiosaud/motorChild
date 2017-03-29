@@ -1,8 +1,8 @@
 .header-flexible {
     display: flex;
 }
-.menues {
-    width: 90%;
+.searchBarMenu {
+    width: 80%;
     display: flex;
     flex-direction: column;
 }
