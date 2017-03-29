@@ -107,6 +107,12 @@ p.prod-li-compare {
 .motor_product_categories .motor_product_categories_list .motor_product_categories_item .frontcategs-img{
 	height: 100px;
 }
+
+@media only screen and (max-width: 1220px){
+	.buscador {
+		width: 90%;
+	}
+}
 @media only screen and (max-width: 768px){
 	.header nav{
 		top: 120px;
