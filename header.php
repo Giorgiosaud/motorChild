@@ -135,9 +135,7 @@ body_class($sticky_header);
 								<a href="<?php echo (!empty($motor_options['wishlist']['id'])) ? get_permalink($motor_options['wishlist']['id']) : ''; ?>" class="header-favorites"><?php if (!empty($motor_options['wishlist']['count'])) : ?><span><?php echo esc_attr($motor_options['wishlist']['count']); ?></span><?php endif; ?></a>
 							<?php endif; ?>
 
-							<!-- Search Form -->
-							<a href="#" class="header-searchbtn" id="header-searchbtn"></a>
-							<?php get_search_form(); ?>
+
 
 						</div>
 
@@ -216,9 +214,7 @@ body_class($sticky_header);
 					<a href="<?php echo (!empty($motor_options['wishlist']['id'])) ? get_permalink($motor_options['wishlist']['id']) : ''; ?>" class="header-favorites"><?php if (!empty($motor_options['wishlist']['count'])) : ?><span><?php echo esc_attr($motor_options['wishlist']['count']); ?></span><?php endif; ?></a>
 				<?php endif; ?>
 
-				<!-- Search Form -->
-				<a href="#" class="header-searchbtn" id="header-searchbtn"></a>
-				<?php get_search_form(); ?>
+				
 
 			</div>
 
