@@ -31,7 +31,9 @@
 .carrito{
 	padding: 1em;
 }
-
+.buscador {
+	flex:1
+}
 .header.header-search button[type=submit]{
 	border: none;
 	background: transparent;
@@ -70,9 +72,32 @@
 	height: 100%;
 	border-left: 1px solid #1f293b;
 }
-.buscador {
-	flex:1
+
+
+
+.menuPrincipalEIconos {
+    display: flex;
 }
+
+.header-info {
+    float: none !important;
+    width: 100% !important;
+}
+
+.iconos {
+    min-width: 150px;
+}
+
+.menuPrincipal {
+    flex: 1;
+}
+
+nav#top-menu {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
 // Hide Compare Button
 // 
 .prod .prod-compare{
