@@ -132,6 +132,7 @@ if(get_theme_mod('footer_image')){
 
 <?php wp_footer(); ?>
 <script>
+<<<<<<< HEAD
 			FB.ui(
 				  {
 					      method: 'share',
@@ -146,6 +147,21 @@ if(get_theme_mod('footer_image')){
 							    //                           }
 							    //                             }
 							    //                             );
+=======
+	jQuery(document).ready(function($) {
+		$('')
+	});
+	FB.ui({
+		method: 'share_open_graph',
+		action_type: 'og.likes',
+		action_properties: JSON.stringify({
+			object:'https://developers.facebook.com/docs/',
+		})
+	}, function(response){
+  // Debug response (optional)
+  console.log(response);
+});
+>>>>>>> 9d3594b2244f75a9f80b5c6e5064d38577192f3c
 </script>
 </body>
 </html>

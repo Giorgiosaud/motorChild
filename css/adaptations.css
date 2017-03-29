@@ -11,17 +11,6 @@ p.prod-li-compare {
 .overfhidden{
 	overflow: hidden;
 }
-.header .header-logo-top{
-	height: 200px;
-	text-align: center;
-}
-.header .header-logo-top a img{
-	height: 100%;
-	margin: auto;
-}
-.header .header-logo{
-	display:none;
-}
 .footer_image{
 	background-size: cover;
 	background-position: 100%;
@@ -45,24 +34,4 @@ p.prod-li-compare {
 .motor_product_categories .motor_product_categories_list .motor_product_categories_item .frontcategs-img{
 	height: 100px;
 }
-@media only screen and (max-width: 650px){
-	.header .header-logo-top {
-		display: none;
 
-	}
-	.header .header-logo{
-		display:block;
-		height:60%;
-	}
-	.header-menutoggle{
-		top: 70px;
-		height: 50px;
-	}
-	.header .header-logo img{
-		height: 100%;
-	}
-	.header {
-		padding: 0 0 100px;
-	}
-
-}
