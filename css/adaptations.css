@@ -28,6 +28,9 @@
 	align-items: center;
 	justify-content: flex-end;
 }
+.carrito{
+	padding: 1em;
+}
 
 .header.header-search button[type=submit]{
 	border: none;
