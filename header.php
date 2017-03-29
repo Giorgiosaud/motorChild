@@ -63,6 +63,7 @@ body_class($sticky_header);
 			</div>
 			<div class="menuPrincipalEIconos">
 				<div class="menuPrincipal">
+					<a href="#" class="header-menutoggle" id="header-menutoggle"><?php echo esc_html__('Menu', 'motor'); ?></a>
 					<?php
 					wp_nav_menu( array(
 						'theme_location' => 'rw-top-menu',
