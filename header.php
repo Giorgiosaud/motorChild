@@ -46,7 +46,6 @@ body_class($sticky_header);
 
 <div id="page" class="site">
 <!-- Header - start -->
-<!-- Header - start -->
 <div id="masthead" class="header">
 
 	<!-- Navmenu Mobile Toggle Button -->
@@ -143,8 +142,6 @@ body_class($sticky_header);
 	<!-- Navmenu - end -->
 
 </div>
-<!-- Header - end -->
-
 <!-- Header - end -->
 
 <div id="content" class="site-content">
