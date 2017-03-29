@@ -10,6 +10,11 @@
 .logo a {
 	height: 100%;
 }
+.logo a img{
+	height: 100%;
+	width: auto;
+	
+}
 
 .flex-column {
 	width: 75%;
