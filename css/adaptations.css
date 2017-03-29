@@ -5,6 +5,9 @@
 .logo {
     width: 25%;
 }
+.logo a {
+    height: 100%;
+}
 
 .flex-column {
     width: 75%;
