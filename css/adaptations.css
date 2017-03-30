@@ -59,7 +59,7 @@ header.header .menuSecundario ul{
 display:none;
 }
 header.header nav{
-	width:inherit;
+	width:100%;
 	flex:none;
 	margin:0
 }
