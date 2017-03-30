@@ -25,6 +25,8 @@ header.header .header-search input[type=text]{
 	margin: 0;
 	width:inherit;
 	flex: 10;
+	text-align: right;
+	
 }
 header.header .header-search button[type=submit]{
 	width:inherit;
