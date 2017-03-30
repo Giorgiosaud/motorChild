@@ -52,7 +52,7 @@ header.header .menuPrincipalySecundario{
 /*--[Tablet]----------------------------------*/
 @media only screen and (max-width: 768px) {
 	header.header .searchForm {
-		margin-left: 5em;
+		margin-left: 1em;
 	}
 }
 /*--[Phones]----------------------------------*/
