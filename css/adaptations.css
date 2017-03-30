@@ -8,7 +8,7 @@ header{
 .menues{
 	flex:5;
 }
-header .header .header-search {
+header.header .header-search {
     line-height: 95px;
     width: 100%;
     background: #161e2b;
