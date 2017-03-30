@@ -8,6 +8,14 @@ header{
 .menues{
 	flex:5;
 }
+header .header .header-search {
+    line-height: 95px;
+    width: 100%;
+    background: #161e2b;
+    height: 100%;
+    border-left: 1px solid #1f293b;
+}
+
 //.header.flex-row {
 //	display: flex;
 //}
