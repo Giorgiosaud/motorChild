@@ -4,7 +4,8 @@ header{
 	background: #18202e;
 }
 header.header .logo{
-	flex:1
+	flex:1;
+	padding: 1em;
 }
 header.header .menues{
 	flex:5;
