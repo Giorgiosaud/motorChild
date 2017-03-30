@@ -1,3 +1,4 @@
+/*--[ Normal CSS styles ]----------------------------------*/
 header{
 	display:flex;
 	background: #18202e;
@@ -44,14 +45,14 @@ header.header .carro {
 header.header .menuPrincipalySecundario{
 	display:none;
 }
-//big monitor
-@media only screen and (max-width: 1220px){
+/*--[Monitor]----------------------------------*/
+@media only screen and (max-width: 1220px) {
 	header.header .logo{
 		flex:2;
 	}
 }
-//tablet
-@media only screen and (max-width: 768px){
+/*--[Tablet]----------------------------------*/
+@media only screen and (max-width: 768px) {
 	header.header .logo{
 		flex:3;
 	}
@@ -59,8 +60,8 @@ header.header .menuPrincipalySecundario{
 		margin-left: 5em;
 	}
 }
-//Phones
-@media only screen and (max-width: 650px){
+/*--[Phones]----------------------------------*/
+@media only screen and (max-width: 650px) {
 	header.header .logo{
 		flex:4;
 	}
