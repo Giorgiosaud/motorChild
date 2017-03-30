@@ -3,11 +3,11 @@ global $motor_options;
 ?><!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
 	<?php if (!empty($motor_options['motor_favicon'])) : ?>
 		<link rel="shortcut icon" href="<?php echo esc_attr($motor_options['motor_favicon']); ?>" type="image/x-icon">
@@ -19,7 +19,7 @@ global $motor_options;
 <body <?php
 $sticky_header = '';
 if (!empty($motor_options['motor_header_sticky']) && $motor_options['motor_header_sticky']) {
-	$sticky_header = 'header-sticky';
+    $sticky_header = 'header-sticky';
 }
 body_class($sticky_header);
 ?>>
@@ -44,10 +44,15 @@ body_class($sticky_header);
 
 
 <div id="page" class="site">
+<header>
+<div class="logo">
+    <?php the_custom_logo();?>
+</div>
+</header>
 	<!-- Header - start -->
 	<div class="header flex-row">
 		<div class="logo">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_attr($motor_options['motor_header_logo']); ?>" alt="<?php bloginfo('sitename'); ?>"></a>
+			<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_attr($motor_options['motor_header_logo']); ?>" alt="<?php bloginfo('sitename'); ?>"></a>
 		</div>
 		<div class="flex-column">
 			<div class="menuBuscadorCarrito">
@@ -57,7 +62,7 @@ body_class($sticky_header);
 				<div class="carrito">
 				<a href="<?php echo esc_url(WC()->cart->get_cart_url()); ?>">
 						<p class="header-cart-count">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/cart.png" alt="">
+							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/cart.png" alt="">
 							<span><?php echo WC()->cart->get_cart_contents_count()?></span>
 						</p>
 					</a>
@@ -67,14 +72,14 @@ body_class($sticky_header);
 				<div class="menuPrincipal">
 					
 					<?php
-					wp_nav_menu( array(
-						'theme_location' => 'rw-top-menu',
-						'container' => 'nav',
-						'container_class' => '',
-						'container_id' => 'top-menu',
-						'items_wrap' => '<ul>%3$s</ul>',
-						) );
-						?>
+                    wp_nav_menu(array(
+                        'theme_location' => 'rw-top-menu',
+                        'container' => 'nav',
+                        'container_class' => '',
+                        'container_id' => 'top-menu',
+                        'items_wrap' => '<ul>%3$s</ul>',
+                        ));
+                        ?>
 						<a href="#" class="header-menutoggle" id="header-menutoggle">
 							<?php echo esc_html__('Menu', 'motor'); ?>
 						</a>
@@ -82,12 +87,12 @@ body_class($sticky_header);
 					<div class="iconos">
 						<div class="header-info">
 
-							<?php if ( class_exists( 'WooCommerce' ) ) : ?>
+							<?php if (class_exists('WooCommerce')) : ?>
 
 								<!-- Personal Menu -->
 								<div class="header-personal">
 									<?php if (is_user_logged_in()) : ?>
-										<a class="header-gopersonal" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"></a>
+										<a class="header-gopersonal" href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"></a>
 										<ul>
 											<?php if (!empty($motor_options['compare']['id'])) : ?>
 												<li>
@@ -106,20 +111,20 @@ body_class($sticky_header);
 												<a href="<?php echo esc_url(WC()->cart->get_checkout_url()); ?>"><?php echo esc_html__('Checkout', 'motor'); ?></a>
 											</li>
 											<li>
-												<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"><?php echo esc_html__('My Account', 'motor'); ?></a>
+												<a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"><?php echo esc_html__('My Account', 'motor'); ?></a>
 											</li>
 											<li>
 												<a href="<?php echo esc_url(wc_customer_edit_account_url()); ?>"><?php echo esc_html__('Settings', 'motor'); ?></a>
 											</li>
 											<li>
-												<a href="<?php echo esc_url( wc_get_endpoint_url( 'customer-logout', '', wc_get_page_permalink( 'myaccount' ) ) ); ?>"><?php echo esc_html__('Log out', 'motor'); ?></a>
+												<a href="<?php echo esc_url(wc_get_endpoint_url('customer-logout', '', wc_get_page_permalink('myaccount'))); ?>"><?php echo esc_html__('Log out', 'motor'); ?></a>
 											</li>
 										</ul>
 									<?php else : ?>
-										<a class="header-gopersonal" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"></a>
+										<a class="header-gopersonal" href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"></a>
 										<ul>
 											<li>
-												<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"><?php esc_html_e('Login / Register','motor'); ?></a>
+												<a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"><?php esc_html_e('Login / Register', 'motor'); ?></a>
 											</li>
 										</ul>
 									<?php endif; ?>
