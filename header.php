@@ -44,7 +44,7 @@ body_class($sticky_header);
 
 
 <div id="page" class="site">
-<header>
+<header class="header">
 	<div class="logo">
 		<?php the_custom_logo();?>
 	</div>
