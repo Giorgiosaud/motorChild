@@ -46,6 +46,7 @@ header.header .carro {
 }
 header.header .menuPrincipalySecundario{
 /*	display:none;*/
+	display:flex;
 }
 header.header nav{
 	width:inherit;
