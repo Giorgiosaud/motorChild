@@ -24,6 +24,14 @@ header.header .header-search input[type=text]{
 	margin: 0;
 	
 }
+header.header .searchForm {
+    flex: 7;
+}
+
+header.header .carro {
+    flex: 1;
+    text-align: center;
+}
 //.header.flex-row {
 	//	display: flex;
 //}
