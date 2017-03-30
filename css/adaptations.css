@@ -20,7 +20,10 @@ header.header .header-search {
 .searchFormYCarro {
 	display: flex;
 }
-
+header.header .header-search input[type=text]{
+	margin: 0;
+	
+}
 //.header.flex-row {
 	//	display: flex;
 //}
