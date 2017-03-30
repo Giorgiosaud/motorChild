@@ -13,33 +13,33 @@ global $motor_options;
 		<link rel="shortcut icon" href="<?php echo esc_attr($motor_options['motor_favicon']); ?>" type="image/x-icon">
 		<link rel="icon" href="<?php echo esc_attr($motor_options['motor_favicon']); ?>" type="image/x-icon">
 	<?php endif; ?>
-	
+
 	<?php wp_head(); ?>
 </head>
-<body <?php
+	<body <?php
 $sticky_header = '';
 if (!empty($motor_options['motor_header_sticky']) && $motor_options['motor_header_sticky']) {
-    $sticky_header = 'header-sticky';
+	$sticky_header = 'header-sticky';
 }
 body_class($sticky_header);
 ?>>
-<script>
-	window.fbAsyncInit = function() {
-		FB.init({
-			appId      : '614386785429381',
-			xfbml      : true,
-			version    : 'v2.8'
-		});
-		FB.AppEvents.logPageView();
-	};
+	<script>
+window.fbAsyncInit = function() {
+	FB.init({
+	appId      : '614386785429381',
+		xfbml      : true,
+		version    : 'v2.8'
+});
+FB.AppEvents.logPageView();
+};
 
-	(function(d, s, id){
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) {return;}
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/en_US/sdk.js";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
+(function(d, s, id){
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) {return;}
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/sdk.js";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 </script>
 
 
@@ -64,15 +64,15 @@ body_class($sticky_header);
 		</div>
 		<div class="menuPrincipalySecundario">
 			<div class="menuPrincipal">
-				<?php
-				wp_nav_menu(array(
-					'theme_location' => 'rw-top-menu',
-					'container' => 'nav',
-					'container_class' => '',
-					'container_id' => 'top-menu',
-					'items_wrap' => '<ul>%3$s</ul>',
-				));
-				?>
+<?php
+wp_nav_menu(array(
+	'theme_location' => 'rw-top-menu',
+	'container' => 'nav',
+	'container_class' => '',
+	'container_id' => 'top-menu',
+	'items_wrap' => '<ul>%3$s</ul>',
+));
+?>
 			</div>
 			<div class="menuSecundario">
 				<?php if (is_user_logged_in()) : ?>
@@ -112,7 +112,7 @@ body_class($sticky_header);
 						</li>
 					</ul>
 				<?php endif; ?>
-		
+
 		</div>
 		</div>
 	</div>

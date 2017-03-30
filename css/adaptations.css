@@ -47,6 +47,10 @@ header.header .carro {
 header.header .menuPrincipalySecundario{
 /*	display:none;*/
 }
+header.header nav{
+	width:inherit;
+	flex:none;
+}
 /*--[Monitor]----------------------------------*/
 @media only screen and (max-width: 1220px) {
 }
