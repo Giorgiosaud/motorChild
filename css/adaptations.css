@@ -17,6 +17,9 @@ header.header .header-search {
 	height: 100%;
 	border-left: 1px solid #1f293b;
 }
+.searchFormYCarro {
+	display: flex;
+}
 
 //.header.flex-row {
 	//	display: flex;
