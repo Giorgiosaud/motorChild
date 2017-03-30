@@ -62,6 +62,17 @@ body_class($sticky_header);
 				</a>
 			</div>
 		</div>
+		<div class="menuPrincipal">
+			<?php
+			wp_nav_menu(array(
+				'theme_location' => 'rw-top-menu',
+				'container' => 'nav',
+				'container_class' => '',
+				'container_id' => 'top-menu',
+				'items_wrap' => '<ul>%3$s</ul>',
+			));
+			?>
+		</div>
 	</div>
 </header>
 	<!-- Header - start -->
