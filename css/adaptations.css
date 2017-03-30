@@ -2,10 +2,10 @@ header{
 	display:flex;
 	background: #18202e;
 }
-.logo{
+header.header .logo{
 	flex:1
 }
-.menues{
+header.header .menues{
 	flex:5;
 }
 header.header .header-search {
@@ -40,6 +40,16 @@ header.header .searchForm {
 header.header .carro {
 	flex: 1;
 	text-align: center;
+}
+@media only screen and (max-width: 1220px){
+	header.header .logo{
+		flex:2
+	}
+}
+@media only screen and (max-width: 768px){
+	header.header .logo{
+		flex:3
+	}
 }
 //.header.flex-row {
 	//	display: flex;
@@ -179,15 +189,5 @@ p.prod-li-compare {
 	height: 100px;
 }
 
-@media only screen and (max-width: 1220px){
-	//	.buscador {
-		//		width: 90%;
-	//	}
-}
-@media only screen and (max-width: 768px){
-	//	.header nav{
-		//		top: 120px;
-	//	}
-}
 
 
