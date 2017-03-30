@@ -1,5 +1,12 @@
 header{
+	display:flex;
 	background: #18202e;
+}
+.logo{
+	flex:1
+}
+.menues{
+	flex:5;
 }
 //.header.flex-row {
 //	display: flex;

@@ -45,9 +45,11 @@ body_class($sticky_header);
 
 <div id="page" class="site">
 <header>
-<div class="logo">
-    <?php the_custom_logo();?>
-</div>
+	<div class="logo">
+		<?php the_custom_logo();?>
+	</div>
+	<div class="menues">
+	</div>
 </header>
 	<!-- Header - start -->
 	<div class="header flex-row">
@@ -70,16 +72,16 @@ body_class($sticky_header);
 			</div>
 			<div class="menuPrincipalEIconos">
 				<div class="menuPrincipal">
-					
-					<?php
-                    wp_nav_menu(array(
-                        'theme_location' => 'rw-top-menu',
-                        'container' => 'nav',
-                        'container_class' => '',
-                        'container_id' => 'top-menu',
-                        'items_wrap' => '<ul>%3$s</ul>',
-                        ));
-                        ?>
+
+<?php
+wp_nav_menu(array(
+	'theme_location' => 'rw-top-menu',
+	'container' => 'nav',
+	'container_class' => '',
+	'container_id' => 'top-menu',
+	'items_wrap' => '<ul>%3$s</ul>',
+));
+?>
 						<a href="#" class="header-menutoggle" id="header-menutoggle">
 							<?php echo esc_html__('Menu', 'motor'); ?>
 						</a>
