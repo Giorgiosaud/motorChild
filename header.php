@@ -75,6 +75,25 @@ wp_nav_menu(array(
 ?>
 			</div>
 			<div class="menuSecundario">
+				<?php if (!empty($motor_options['wishlist']['id'])) : ?>
+					<a href="<?php echo (!empty($motor_options['wishlist']['id'])) ? get_permalink($motor_options['wishlist']['id']) : ''; ?>" class="header-favorites"><?php if (!empty($motor_options['wishlist']['count'])) : ?><span><?php echo esc_attr($motor_options['wishlist']['count']); ?></span><?php endif; ?></a>
+				<?php endif; ?>
+				
+				<?php if (!empty($motor_options['compare']['id'])) : ?>
+					<a href="<?php echo (!empty($motor_options['compare']['id'])) ? get_permalink($motor_options['compare']['id']) : ''; ?>" class="header-compare"><?php if (count($motor_options['compare']['list'])) : ?><span><?php echo count($motor_options['compare']['list'])?></span><?php endif; ?></a>
+				<?php endif; ?>
+
+				<a href="<?php echo esc_url(WC()->cart->get_cart_url()); ?>" class="header-cart">
+					<div class="header-cart-inner">
+						<p class="header-cart-count">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/cart.png" alt="">
+							<span><?php echo WC()->cart->get_cart_contents_count()?></span>
+						</p>
+						<p class="header-cart-summ"><?php echo WC()->cart->get_cart_total(); ?></p>
+					</div>
+				</a>
+		
+		<?php endif; ?>
 				<?php if (is_user_logged_in()) : ?>
 					<a class="header-gopersonal" href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"></a>
 					<ul>
