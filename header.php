@@ -89,6 +89,7 @@ wp_nav_menu(array(
 					</div>
 				</a>
 				<?php if (is_user_logged_in()) : ?>
+				<div class="header-personal">
 					<a class="header-gopersonal" href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"></a>
 					<ul>
 						<?php if (!empty($motor_options['compare']['id'])) : ?>
@@ -125,7 +126,7 @@ wp_nav_menu(array(
 						</li>
 					</ul>
 				<?php endif; ?>
-
+</div>
 		</div>
 		</div>
 	</div>
