@@ -7,6 +7,16 @@ function motor_child_scripts_styles()
 }
 add_action('wp_enqueue_scripts', 'motor_child_scripts_styles');
 add_action('after_setup_theme', 'motor_child_setup');
+add_filter( 'get_custom_logo', 'change_logo_class' );
+
+
+function change_logo_class( $html ) {
+
+    $html = str_replace( 'custom-logo', 'img-responsive', $html );
+    //$html = str_replace( 'custom-logo-link', 'your-custom-class', $html );
+
+    return $html;
+}
 function motor_child_setup()
 {
     add_theme_support('custom-logo',
