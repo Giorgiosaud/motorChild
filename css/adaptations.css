@@ -40,6 +40,7 @@ header.header .searchForm {
 
 header.header .carro {
 	flex: 1;
+	min-width: 60px;
 	text-align: center;
 }
 header.header .menuPrincipalySecundario{
@@ -47,15 +48,9 @@ header.header .menuPrincipalySecundario{
 }
 /*--[Monitor]----------------------------------*/
 @media only screen and (max-width: 1220px) {
-	header.header .logo{
-		flex:2;
-	}
 }
 /*--[Tablet]----------------------------------*/
 @media only screen and (max-width: 768px) {
-	header.header .logo{
-		flex:3;
-	}
 	header.header .searchForm {
 		margin-left: 5em;
 	}
@@ -63,7 +58,7 @@ header.header .menuPrincipalySecundario{
 /*--[Phones]----------------------------------*/
 @media only screen and (max-width: 650px) {
 	header.header .logo{
-		flex:4;
+		flex:2;
 	}
 }
 //.header.flex-row {
