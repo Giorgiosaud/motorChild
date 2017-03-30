@@ -45,8 +45,15 @@ header.header .carro {
 	text-align: center;
 }
 header.header .menuPrincipalySecundario{
-/*	display:none;*/
 	display:flex;
+}
+header.header .menuPrincipal{
+	flex:1;
+}
+header.header .menuSecundario {
+    min-width: 160px;
+	margin: 0 1em;
+    
 }
 header.header .menuSecundario ul{
 display:none;
@@ -54,6 +61,7 @@ display:none;
 header.header nav{
 	width:inherit;
 	flex:none;
+	margin:0
 }
 /*--[Monitor]----------------------------------*/
 @media only screen and (max-width: 1220px) {
