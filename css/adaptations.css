@@ -23,7 +23,10 @@ header.header .searchFormYCarro {
 }
 header.header .header-search input[type=text]{
 	margin: 0;
-	
+	width:inherit;
+}
+header.header .header-search button[type=submit]{
+	width:inherit;
 }
 header.header .searchForm {
     flex: 7;
