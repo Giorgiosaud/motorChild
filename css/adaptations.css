@@ -55,6 +55,9 @@ header.header .menuPrincipalySecundario{
 	header.header .logo{
 		flex:3;
 	}
+	header.header .searchForm {
+		margin-left: 5em;
+	}
 }
 //Phones
 @media only screen and (max-width: 650px){
