@@ -9,6 +9,11 @@ header.header .logo{
 }
 header.header .menues{
 	flex:5;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: space-around;
 }
 header.header .header-search {
 	display:flex;
@@ -51,12 +56,12 @@ header.header .menuPrincipal{
 	flex:1;
 }
 header.header .menuSecundario {
-    min-width: 160px;
+	min-width: 160px;
 	margin: 0 1em;
-    
+
 }
 header.header .menuSecundario ul{
-display:none;
+	display:none;
 }
 header.header nav{
 	width:100%;
