@@ -92,8 +92,6 @@ wp_nav_menu(array(
 						<p class="header-cart-summ"><?php echo WC()->cart->get_cart_total(); ?></p>
 					</div>
 				</a>
-		
-		<?php endif; ?>
 				<?php if (is_user_logged_in()) : ?>
 					<a class="header-gopersonal" href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"></a>
 					<ul>
