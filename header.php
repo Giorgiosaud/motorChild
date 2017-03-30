@@ -62,16 +62,58 @@ body_class($sticky_header);
 				</a>
 			</div>
 		</div>
-		<div class="menuPrincipal">
-			<?php
-			wp_nav_menu(array(
-				'theme_location' => 'rw-top-menu',
-				'container' => 'nav',
-				'container_class' => '',
-				'container_id' => 'top-menu',
-				'items_wrap' => '<ul>%3$s</ul>',
-			));
-			?>
+		<div class="menuPrincipalySecundario">
+			<div class="menuPrincipal">
+				<?php
+				wp_nav_menu(array(
+					'theme_location' => 'rw-top-menu',
+					'container' => 'nav',
+					'container_class' => '',
+					'container_id' => 'top-menu',
+					'items_wrap' => '<ul>%3$s</ul>',
+				));
+				?>
+			</div>
+			<div class="menuSecundario">
+				<?php if (is_user_logged_in()) : ?>
+					<a class="header-gopersonal" href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"></a>
+					<ul>
+						<?php if (!empty($motor_options['compare']['id'])) : ?>
+							<li>
+								<a href="<?php echo ($motor_options['compare']['id']) ? get_permalink($motor_options['compare']['id']) : ''; ?>"><?php echo esc_html__('Compare list', 'motor'); ?> <span><?php echo count($motor_options['compare']['list'])?></span></a>
+							</li>
+						<?php endif; ?>
+						<?php if (!empty($motor_options['wishlist']['id'])) : ?>
+							<li>
+								<a href="<?php echo ($motor_options['wishlist']['id']) ? get_permalink($motor_options['wishlist']['id']) : ''; ?>"><?php echo esc_html__('Wishlist', 'motor'); ?> <span><?php echo esc_attr($motor_options['wishlist']['count']); ?></span></a>
+							</li>
+						<?php endif; ?>
+						<li class="header-personal-cart">
+							<a href="<?php echo esc_url(WC()->cart->get_cart_url()); ?>"><?php echo esc_html__('Shopping Cart', 'motor'); ?> <span><?php echo WC()->cart->get_cart_contents_count()?></span></a>
+						</li>
+						<li class="header-order">
+							<a href="<?php echo esc_url(WC()->cart->get_checkout_url()); ?>"><?php echo esc_html__('Checkout', 'motor'); ?></a>
+						</li>
+						<li>
+							<a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"><?php echo esc_html__('My Account', 'motor'); ?></a>
+						</li>
+						<li>
+							<a href="<?php echo esc_url(wc_customer_edit_account_url()); ?>"><?php echo esc_html__('Settings', 'motor'); ?></a>
+						</li>
+						<li>
+							<a href="<?php echo esc_url(wc_get_endpoint_url('customer-logout', '', wc_get_page_permalink('myaccount'))); ?>"><?php echo esc_html__('Log out', 'motor'); ?></a>
+						</li>
+					</ul>
+				<?php else : ?>
+					<a class="header-gopersonal" href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"></a>
+					<ul>
+						<li>
+							<a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"><?php esc_html_e('Login / Register', 'motor'); ?></a>
+						</li>
+					</ul>
+				<?php endif; ?>
+			
+			</div>
 		</div>
 	</div>
 </header>
