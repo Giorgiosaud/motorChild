@@ -17,8 +17,9 @@ header.header .header-search {
 	height: 100%;
 	border-left: 1px solid #1f293b;
 }
-.searchFormYCarro {
+header.header .searchFormYCarro {
 	display: flex;
+	align-items: center;
 }
 header.header .header-search input[type=text]{
 	margin: 0;
