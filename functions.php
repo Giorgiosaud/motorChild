@@ -1,5 +1,6 @@
 <?php
 require 'inc/customElements.php';
+add_filter('show_admin_bar', '__return_false');
 function motor_child_scripts_styles()
 {
     wp_enqueue_style('motor-parent-style', get_template_directory_uri(). '/style.css');
