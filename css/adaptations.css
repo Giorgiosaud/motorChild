@@ -83,6 +83,13 @@ header.header nav{
 	header.header .logo{
 		flex:2;
 	}
+	header.header .header-menutoggle{
+		position:relative;
+		top:inherit;
+		right:inherit;
+		float:right;
+		height:inherit;
+	}
 }
 //.header.flex-row {
 	//	display: flex;
