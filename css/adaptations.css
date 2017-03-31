@@ -90,6 +90,9 @@ header.header nav{
 		float:right;
 		height:inherit;
 	}
+	header.header{
+		padding:0
+	}
 }
 //.header.flex-row {
 	//	display: flex;
