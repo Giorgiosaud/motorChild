@@ -57,7 +57,9 @@ header.header .menuPrincipal{
 header.header .menuSecundario {
 	min-width: 160px;
 	margin: 0 1em;
-
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 header.header .menuSecundario ul{
 	display:none;
