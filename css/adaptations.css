@@ -82,6 +82,8 @@ header.header nav{
 @media only screen and (max-width: 650px) {
 	header.header .logo{
 		flex:2;
+		position: relative;
+		z-index: 21;
 	}
 	header.header .header-menutoggle{
 		position:relative;
