@@ -45,8 +45,15 @@ header.header .searchForm {
 
 header.header .carro {
 	flex: 1;
-	min-width: 60px;
+	min-width: 180px;
 	text-align: center;
+	display: flex;
+	color: #fff;
+	justify-content: space-around;
+	margin-right: 1em;
+}
+header.header .carro a:hover{
+	color:#ed1c24;
 }
 header.header .menuPrincipalySecundario{
 	display:flex;
@@ -99,141 +106,141 @@ header.header nav{
 }
 //.header.flex-row {
 	//	display: flex;
-//}
-//
-//.logo {
-	//	width: 25%;
-	//	height: 200px;
-	//	text-align: center;
-//}
-//.logo a {
-	//	height: 100%;
-//}
-//.logo a img{
-	//	max-height: 100%;
-	//	width: auto;
-	//	
-//}
-//
-//.flex-column {
-	//	width: 75%;
-	//	display: flex;
-	//	justify-content: center;
-	//	flex-direction: column;
-//}
-//
-//.menuBuscadorCarrito {
-	//	display: flex;
-	//	align-items: center;
-	//	justify-content: flex-end;
-//}
-//.carrito{
-	//	padding: 1em;
-//}
-//.buscador {
-	//	flex:1
-//}
-//.header.header-search button[type=submit]{
-	//	border: none;
-	//	background: transparent;
-	//	height: 50px;
-	//	width: 30px;
-	//	font-size: 15px;
-	//	color: #fff;
-	//	cursor: pointer;
-	//	font-weight: normal;
-	//	display: inline-block;
-	//	vertical-align: middle;
-	//	transition: all 0.2s;
-//}
-//.header .header-search input[type=text]{
-	//	color: #868ca7;
-	//	margin: 0;
-	//	width: 85%;
-	//	font-size: 15px;
-	//	background: transparent;
-	//	height: 50px;
-	//	border: none;
-	//	padding: 0 15px;
-	//	display: inline-block;
-	//	vertical-align: middle;
-	//	transition: all 0.2s;
-//}
-//.header .header-search {
-	//	display: block;
-	//	line-height: inherit;
-	//	position: relative;
-	//	top: 0;
-	//	left: 0;
-	//	width: 100%;
-	//	z-index: 5;
-	//	background: #161e2b;
-	//	height: 100%;
-	//	border-left: 1px solid #1f293b;
-//}
-//
-//
-//
-//.menuPrincipalEIconos {
-	//    display: flex;
-//}
-//
-//.header-info {
-	//    float: none !important;
-	//    width: 100% !important;
-//}
-//
-//.iconos {
-	//    min-width: 150px;
-//}
-//
-//.menuPrincipal {
-	//    flex: 1;
-//}
-//
-//nav#top-menu {
-	//    display: flex;
-	//    width: 100%;
-	//    margin: 0;
-//}
-//
-// Hide Compare Button
-// 
-.prod .prod-compare{
-	display: none !important;
-}
-p.prod-compare{
-	display: none !important;
-}
-p.prod-li-compare {
-	display: none !important;
-}
-.overfhidden{
-	overflow: hidden;
-}
-.footer_image{
-	background-size: cover;
-	background-position: 100%;
-}
-.footer-info .footer-msg{
-	color:#FFF;
-}
-.woof_text_search_container input[type='search'],.woof_sku_search_container input[type='search'] {
-	width: 90% !important;
-	height: 2em !important;
-	line-height: 2em !important;
-	font-size: 3em !important;
-	padding: 1em !important;
-	margin: 0em 5% !important;
-	color: black;
-}
-.motor_product_categories .motor_product_categories_list .motor_product_categories_item a:hover .frontcategs-img{
-	opacity:1;
-	filter:sepia(100%);
-}
-.motor_product_categories .motor_product_categories_list .motor_product_categories_item .frontcategs-img{
-	height: 100px;
-}
+	//}
+	//
+	//.logo {
+		//	width: 25%;
+		//	height: 200px;
+		//	text-align: center;
+		//}
+		//.logo a {
+			//	height: 100%;
+			//}
+			//.logo a img{
+				//	max-height: 100%;
+				//	width: auto;
+				//	
+				//}
+				//
+				//.flex-column {
+					//	width: 75%;
+					//	display: flex;
+					//	justify-content: center;
+					//	flex-direction: column;
+					//}
+					//
+					//.menuBuscadorCarrito {
+						//	display: flex;
+						//	align-items: center;
+						//	justify-content: flex-end;
+						//}
+						//.carrito{
+							//	padding: 1em;
+							//}
+							//.buscador {
+								//	flex:1
+								//}
+								//.header.header-search button[type=submit]{
+									//	border: none;
+									//	background: transparent;
+									//	height: 50px;
+									//	width: 30px;
+									//	font-size: 15px;
+									//	color: #fff;
+									//	cursor: pointer;
+									//	font-weight: normal;
+									//	display: inline-block;
+									//	vertical-align: middle;
+									//	transition: all 0.2s;
+									//}
+									//.header .header-search input[type=text]{
+										//	color: #868ca7;
+										//	margin: 0;
+										//	width: 85%;
+										//	font-size: 15px;
+										//	background: transparent;
+										//	height: 50px;
+										//	border: none;
+										//	padding: 0 15px;
+										//	display: inline-block;
+										//	vertical-align: middle;
+										//	transition: all 0.2s;
+										//}
+										//.header .header-search {
+											//	display: block;
+											//	line-height: inherit;
+											//	position: relative;
+											//	top: 0;
+											//	left: 0;
+											//	width: 100%;
+											//	z-index: 5;
+											//	background: #161e2b;
+											//	height: 100%;
+											//	border-left: 1px solid #1f293b;
+											//}
+											//
+											//
+											//
+											//.menuPrincipalEIconos {
+												//    display: flex;
+												//}
+												//
+												//.header-info {
+													//    float: none !important;
+													//    width: 100% !important;
+													//}
+													//
+													//.iconos {
+														//    min-width: 150px;
+														//}
+														//
+														//.menuPrincipal {
+															//    flex: 1;
+															//}
+															//
+															//nav#top-menu {
+																//    display: flex;
+																//    width: 100%;
+																//    margin: 0;
+																//}
+																//
+																// Hide Compare Button
+																// 
+																.prod .prod-compare{
+																	display: none !important;
+																}
+																p.prod-compare{
+																	display: none !important;
+																}
+																p.prod-li-compare {
+																	display: none !important;
+																}
+																.overfhidden{
+																	overflow: hidden;
+																}
+																.footer_image{
+																	background-size: cover;
+																	background-position: 100%;
+																}
+																.footer-info .footer-msg{
+																	color:#FFF;
+																}
+																.woof_text_search_container input[type='search'],.woof_sku_search_container input[type='search'] {
+																	width: 90% !important;
+																	height: 2em !important;
+																	line-height: 2em !important;
+																	font-size: 3em !important;
+																	padding: 1em !important;
+																	margin: 0em 5% !important;
+																	color: black;
+																}
+																.motor_product_categories .motor_product_categories_list .motor_product_categories_item a:hover .frontcategs-img{
+																	opacity:1;
+																	filter:sepia(100%);
+																}
+																.motor_product_categories .motor_product_categories_list .motor_product_categories_item .frontcategs-img{
+																	height: 100px;
+																}
 
 
 

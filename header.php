@@ -60,6 +60,13 @@ FB.AppEvents.logPageView();
 						<span><?php echo WC()->cart->get_cart_contents_count()?></span>
 					</p>
 				</a>
+				<?php for ($i = 1; $i <= 10; $i++) : ?>
+				<?php if (!empty($motor_options['motor_footer_link_'.$i]) && !empty($motor_options['motor_footer_icon_'.$i])) : ?>
+						<a rel="nofollow" target="_blank" href="<?php echo esc_url($motor_options['motor_footer_link_'.$i]); ?>">
+							<?php echo wp_kses_post($motor_options['motor_footer_icon_'.$i]); ?>
+						</a>
+				<?php endif; ?>
+			<?php endfor; ?>
 			</div>
 		</div>
 		<div class="menuPrincipalySecundario">
